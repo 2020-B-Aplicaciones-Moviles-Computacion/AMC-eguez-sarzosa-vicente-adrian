@@ -120,6 +120,93 @@ fun main() {
                 return@filter mayoresACinco
             }
     println(respuestaFilter)
+
+    // Any All -> Condicion -> Boolean
+    // OR <-> AND
+    // OR = Any
+    // OR (FALSO - TODOS SON FALSOS ES FALSO)
+    // OR (TRUE - UNO ES TRUE YA ES TRUE)
+    // AND = All
+    // AND (FALSO - UNO ES FALSO YA ES FALSO)
+    // AND (TRUE - TODOS SON TRUE ES TRUE)
+
+    val respuestaAny: Boolean = arregloDinamico
+            .any { valorActualIteracion ->
+                return@any (valorActualIteracion > 5)
+            }
+    println(respuestaAny) // true
+
+    val respuestaAll: Boolean = arregloDinamico
+            .all { valorActualIteracion ->
+                return@all valorActualIteracion > 5
+            }
+    println(respuestaAll) // false
+
+    // REDUCE
+    // 1) Devuelve el acumulado
+    // 2) En que valor empieza
+    // [1,2,3,4,5]
+    //  0 = 0 + 1
+    //  1 = 1 + 2
+    //  3 = 3 + 3
+    //  6 = 6 + 4
+    //  10 = 10 + 5
+    //  15
+
+    val respuestaFilter: Int = arregloDinamico
+            .reduce { // acumulado = 0
+                acumulado, valorActualIteracion ->
+                return@reduce acumulado + valorActualIteracion
+            }
+    println(respuestaFilter) // 78
+
+    val respuestaReduceFold = arregloDinamico
+            .fold(
+                    100,
+                    { acumulado, valorActualIteracion ->
+                        return@fold acumulado - valorActualIteracion
+                    }
+            )
+    println(respuestaReduceFold) // 22
+    // arregloMutable.fold (empieza desde el principio
+    // arregloMutable.foldRight (empieza desde el final
+    // arregloMutable.reduce (empieza desde el final
+    // arregloMutable.reduceRight (empieza desde el final
+
+    // OPERADORES
+    // forEach -> Unit (void)
+    // map -> Arreglo
+    // filter -> Arreglo
+    // all -> Booleano
+    // any -> Booleano
+    // reduce -> Valor
+    // fold -> Valor
+
+    val vidaActual: Double = arregloDinamico
+            .map { it * 2.3 } // arreglo
+            .filter { it > 20 } // arreglo
+            .fold(100.00, { acc, i -> acc - i }) // valor
+            .also { println(it) } // ejecutar codigo extra
+    println("Valor vida actual ${vidaActual}")  // 3.4
+
+    val ejemploUno = Suma(1, 2)
+    // val ejemploUno = Suma(1,2)
+    val ejemploDos = Suma(null, 2)
+    // val ejemploDos = Suma(null,2)
+    val ejemploTres = Suma(1, null)
+    // val ejemploTres = Suma(1,null)
+    val ejemploCuatro = Suma(null, null)
+    // val ejemploCuatro = Suma(null,null)
+    println(ejemploUno.sumar())
+    println(Suma.historialSumas)
+    println(ejemploDos.sumar())
+    println(Suma.historialSumas)
+    println(ejemploTres.sumar())
+    println(Suma.historialSumas)
+    println(ejemploCuatro.sumar())
+    println(Suma.historialSumas)
+
+
 } // FIN bloque MAIN
 
 fun imprimirNombre(nombre: String): Unit {
@@ -140,6 +227,108 @@ fun calcularSueldo(
         return sueldo * (100 / tasa) * calculoEspecial
     }
 }
+
+
+abstract class NumerosJava {
+    protected val numeroUno: Int
+    private val numeroDos: Int
+
+    constructor( // Constructor primario
+            uno: Int,
+            dos: Int
+    ) { // Bloque de codigo del constructor primario
+        // this.numeroUno
+        numeroUno = uno
+        // this.numeroDos
+        numeroDos = dos
+        println("inicializar algunas cosas dentro de la clase")
+    }
+}
+
+// instancia.numeroUno
+// instancia.numeroDos
+abstract class Numeros( // Construtor primario
+        protected var numeroUno: Int,
+        protected var numeroDos: Int,
+) {
+    init { // bloque de codigo del constructor primario
+        println("inicializar algunas cosas dentro de la clase")
+    }
+}
+
+class Suma(
+        uno: Int, // parametros
+        dos: Int // parametros
+) : Numeros(uno, dos) {
+    init {
+        // this.numeroUno
+        // this.numeroDos
+        // X -> this.uno -> NO EXISTEN
+        // X -> this.dos -> NO EXISTEN
+    }
+
+    constructor( //  Segundo constructor
+            uno: Int?, // parametros
+            dos: Int // parametros
+    ) : this( // llamada constructor primario
+            if (uno == null) 0 else uno,
+            dos
+    ) {
+
+    }
+
+    constructor( //  Tercer constructor
+            uno: Int, // parametros
+            dos: Int? // parametros
+    ) : this( // llamada constructor primario
+            uno,
+            if (dos == null) 0 else dos
+    ) {
+
+    }
+
+    constructor( //  Cuarto constructor
+            uno: Int?, // parametros
+            dos: Int? // parametros
+    ) : this( // llamada constructor primario
+            if (uno == null) 0 else uno,
+            if (dos == null) 0 else dos
+    ) {
+
+    }
+
+    public fun sumar(): Int {
+        // this.numeroUno
+        // this.numeroDos
+        val total: Int = numeroUno + numeroDos
+        Suma.agregarHistorial(total)
+        return total
+    }
+
+    // SINGLETON
+    companion object { // Metodos y Propiedades
+        val historialSumas = arrayListOf<Int>()
+        fun agregarHistorial(nuevaSuma: Int) {
+            this.historialSumas.add(nuevaSuma)
+        }
+    }
+}
+
+class BaseDeDatos() {
+    companion object {
+        val datos = arrayListOf<Int>()
+    }
+}
+// BaseDeDatos.datos
+
+
+
+
+
+
+
+
+
 
 
 
