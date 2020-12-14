@@ -45,6 +45,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array string_array_opciones_dialogo
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -1669,7 +1670,13 @@ id beginning
 id blocking
 id bottom
 id bounce
+id btn_anadir_item_lv
+id btn_ciclo_vida
+id btn_devolver_parametros
+id btn_ir_intent_explicito_parametros
+id btn_ir_list_view
 id buttonPanel
+id button_ir_ciclo_vida
 id cache_measures
 id cancel_button
 id center
@@ -1776,8 +1783,11 @@ id line3
 id linear
 id listMode
 id list_item
+id lv_entrenador
 id masked
 id message
+id mi_editar
+id mi_eliminar
 id middle
 id mini
 id month_grid
@@ -1917,6 +1927,7 @@ id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView
 id text_input_end_icon
 id text_input_start_icon
 id textinput_counter
@@ -1941,6 +1952,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id txv_ciclo_vida
 id unchecked
 id uniform
 id unlabeled
@@ -2013,6 +2025,9 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_a_ciclo_vida
+layout activity_b_list_view
+layout activity_c_intent_explicito_parametros
 layout activity_main
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -2082,6 +2097,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+menu menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description

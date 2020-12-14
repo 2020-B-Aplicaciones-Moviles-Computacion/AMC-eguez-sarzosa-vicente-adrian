@@ -19,6 +19,17 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.MovilesComputacion" >
+        <activity android:name="com.example.movilescomputacion.CIntentExplicitoParametros" />
+        <activity android:name="com.example.movilescomputacion.BListView" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.movilescomputacion.ACicloVida" />
         <activity android:name="com.example.movilescomputacion.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -11,7 +11,7 @@
 9-->/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/AndroidManifest.xml
 10
 11    <application
-11-->/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/AndroidManifest.xml:5:5-19:19
+11-->/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/AndroidManifest.xml:5:5-30:19
 12        android:allowBackup="true"
 12-->/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -29,20 +29,44 @@
 20        android:testOnly="true"
 21        android:theme="@style/Theme.MovilesComputacion" >
 21-->/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/AndroidManifest.xml:11:9-56
-22        <activity android:name="com.example.movilescomputacion.MainActivity" >
-22-->/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/AndroidManifest.xml:12:9-18:20
-22-->/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/AndroidManifest.xml:12:19-47
-23            <intent-filter>
-23-->/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/AndroidManifest.xml:13:13-17:29
-24                <action android:name="android.intent.action.MAIN" />
-24-->/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/AndroidManifest.xml:14:17-69
-24-->/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/AndroidManifest.xml:14:25-66
-25
-26                <category android:name="android.intent.category.LAUNCHER" />
-26-->/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/AndroidManifest.xml:16:17-77
-26-->/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/AndroidManifest.xml:16:27-74
-27            </intent-filter>
-28        </activity>
-29    </application>
-30
-31</manifest>
+22        <activity android:name="com.example.movilescomputacion.CIntentExplicitoParametros" />
+22-->/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/AndroidManifest.xml:12:9-73
+22-->/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/AndroidManifest.xml:12:19-61
+23        <activity android:name="com.example.movilescomputacion.BListView" >
+23-->/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/AndroidManifest.xml:13:9-21:20
+23-->/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/AndroidManifest.xml:13:19-44
+24            <intent-filter>
+24-->/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/AndroidManifest.xml:14:13-20:29
+25                <action android:name="android.intent.action.SEND" />
+25-->/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/AndroidManifest.xml:15:17-69
+25-->/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/AndroidManifest.xml:15:25-66
+26
+27                <category android:name="android.intent.category.DEFAULT" />
+27-->/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/AndroidManifest.xml:17:17-76
+27-->/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/AndroidManifest.xml:17:27-73
+28
+29                <data android:mimeType="text/plain" />
+29-->/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/AndroidManifest.xml:19:17-55
+29-->/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/AndroidManifest.xml:19:23-52
+30            </intent-filter>
+31        </activity>
+32        <activity android:name="com.example.movilescomputacion.ACicloVida" />
+32-->/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/AndroidManifest.xml:22:9-48
+32-->/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/AndroidManifest.xml:22:19-45
+33        <activity android:name="com.example.movilescomputacion.MainActivity" >
+33-->/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/AndroidManifest.xml:23:9-29:20
+33-->/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/AndroidManifest.xml:23:19-47
+34            <intent-filter>
+34-->/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/AndroidManifest.xml:24:13-28:29
+35                <action android:name="android.intent.action.MAIN" />
+35-->/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/AndroidManifest.xml:25:17-69
+35-->/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/AndroidManifest.xml:25:25-66
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/AndroidManifest.xml:27:17-77
+37-->/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/AndroidManifest.xml:27:27-74
+38            </intent-filter>
+39        </activity>
+40    </application>
+41
+42</manifest>
