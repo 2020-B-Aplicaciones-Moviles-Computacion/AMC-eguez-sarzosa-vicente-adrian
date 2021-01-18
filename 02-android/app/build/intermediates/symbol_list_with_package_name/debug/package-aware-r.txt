@@ -1672,9 +1672,14 @@ id bottom
 id bounce
 id btn_anadir_item_lv
 id btn_ciclo_vida
+id btn_dar_like
 id btn_devolver_parametros
+id btn_ir_http
+id btn_ir_intent_con_respuesta
 id btn_ir_intent_explicito_parametros
 id btn_ir_list_view
+id btn_ir_recycler_view
+id btn_selecccionar_contacto
 id buttonPanel
 id button_ir_ciclo_vida
 id cache_measures
@@ -1855,6 +1860,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id rv_entrenadores
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -1952,6 +1958,10 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tv_cedula
+id tv_likes
+id tv_nombre
+id tv_total_likes
 id txv_ciclo_vida
 id unchecked
 id uniform
@@ -2028,6 +2038,9 @@ layout abc_tooltip
 layout activity_a_ciclo_vida
 layout activity_b_list_view
 layout activity_c_intent_explicito_parametros
+layout activity_f_intent_con_respuesta
+layout activity_g_recycler_view
+layout activity_h_http
 layout activity_main
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -2079,6 +2092,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout recycler_view_vista
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material

@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.os.Parcelable
 import android.util.Log
 import android.widget.Button
+import java.util.*
+import kotlin.collections.ArrayList
 
 class MainActivity : AppCompatActivity() {
 
@@ -28,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         val buttonIntentExplicitoParametros =
-                findViewById<Button>(R.id.btn_ir_intent_explicito_parametros)
+            findViewById<Button>(R.id.btn_ir_intent_explicito_parametros)
         buttonIntentExplicitoParametros.setOnClickListener {
 
 //            val intentExplicito = Intent(
@@ -45,35 +47,95 @@ class MainActivity : AppCompatActivity() {
 
             val liga = DLiga("Kanto", "Pokemon")
             val entrenador = BEntrenador(
-                    "Ash",
-                    "Pueblo paleta",
-                    liga
+                "Ash",
+                "Pueblo paleta",
+                liga
             )
             val parametros = arrayListOf<Pair<String, *>>(
-                    Pair("nombre", "Adrian"),
-                    Pair("apellido", "Eguez"),
-                    Pair("edad", 31),
-                    Pair("ash", entrenador)
+                Pair("nombre", "Adrian"),
+                Pair("apellido", "Eguez"),
+                Pair("edad", 31),
+                Pair("ash", entrenador)
 
             )
             irActividad(
-                    CIntentExplicitoParametros::class.java,
-                    parametros,
-                    CODIGO_ACTUALIZAR_DATOS // 102
+                CIntentExplicitoParametros::class.java,
+                parametros,
+                CODIGO_ACTUALIZAR_DATOS // 102
             )
 
         }
+        EBaseDeDatos.TablaUsuario = ESqliteHelperUsuario(this)
+        val usuarioEncontrado = EBaseDeDatos.TablaUsuario?.consultarUsuarioPorId(1)
+        Log.i(
+            "bdd", "ID:${usuarioEncontrado?.id} Nombre:${usuarioEncontrado?.nombre}" +
+                    "Descripcion:${usuarioEncontrado?.descripcion}"
+        )
+        if (usuarioEncontrado?.id == 0) {
+            val resultado = EBaseDeDatos.TablaUsuario
+                ?.crearUsuarioFormulario("Adrian", "Profe")
+            if (resultado != null) {
+                if (resultado) {
+                    Log.i("bdd", "Se creo correctamente")
+                } else {
+                    Log.i("bdd", "Hubo errores")
+                }
+            }
+        } else {
+            val resultado = EBaseDeDatos.TablaUsuario
+                ?.actualizarUsuarioFormulario(
+                    "Vicente",
+                    Date().time.toString(),
+                    1
+                )
+            if (resultado != null) {
+                if (resultado) {
+                    Log.i("bdd", "Se actualizo")
+                } else {
+                    Log.i("bdd", "Errores")
+                }
+            }
+        }
+        val botonIrIntentConRespuesta = findViewById<Button>(
+            R.id.btn_ir_intent_con_respuesta
+        )
+        botonIrIntentConRespuesta
+            .setOnClickListener {
+                irActividad(
+                    FIntentConRespuesta::class.java
+                )
+            }
 
-    }
+        val botonIrRecyclerView = findViewById<Button>(
+            R.id.btn_ir_recycler_view
+        )
+        botonIrRecyclerView
+            .setOnClickListener {
+                irActividad(
+                    GRecyclerView::class.java
+                )
+            }
+
+        val botonIrHttp = findViewById<Button>(
+            R.id.btn_ir_http
+        )
+        botonIrHttp
+            .setOnClickListener {
+                irActividad(
+                    HHttpActivity::class.java
+                )
+            }
+
+    } // Fin onCreate
 
     fun irActividad(
-            clase: Class<*>,
-            parametros: ArrayList<Pair<String, *>>? = null,
-            codigo: Int? = null
+        clase: Class<*>,
+        parametros: ArrayList<Pair<String, *>>? = null,
+        codigo: Int? = null
     ) {
         val intentExplicito = Intent(
-                this,
-                clase
+            this,
+            clase
         )
         if (parametros != null) {
             parametros.forEach {
@@ -109,9 +171,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onActivityResult(
-            requestCode: Int,  // Codigo de petición  - Codigo: 102
-            resultCode: Int,  //  Codigo de Resultado - RESULT_OK o RESULT_CANCELED
-            data: Intent?  // Datos (opcionales)  Ej: nombre = Vicente y edad = 30
+        requestCode: Int,  // Codigo de petición  - Codigo: 102
+        resultCode: Int,  //  Codigo de Resultado - RESULT_OK o RESULT_CANCELED
+        data: Intent?  // Datos (opcionales)  Ej: nombre = Vicente y edad = 30
     ) {
         super.onActivityResult(requestCode, resultCode, data)
         Log.i("intent-exlicito", "${requestCode} ${resultCode} ${data}")

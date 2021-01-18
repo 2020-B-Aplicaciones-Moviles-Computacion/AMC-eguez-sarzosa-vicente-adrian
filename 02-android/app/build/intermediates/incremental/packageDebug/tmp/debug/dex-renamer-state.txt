@@ -1,4 +1,4 @@
-#Mon Dec 14 12:53:31 ECT 2020
+#Wed Dec 23 11:54:36 ECT 2020
 base.0=/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex

@@ -32,6 +32,14 @@
         "source": "/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/res/layout/activity_a_ciclo_vida.xml"
     },
     {
+        "merged": "/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/build/intermediates/res/merged/debug/layout_activity_f_intent_con_respuesta.xml.flat",
+        "source": "/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/res/layout/activity_f_intent_con_respuesta.xml"
+    },
+    {
+        "merged": "/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/build/intermediates/res/merged/debug/layout_activity_h_http.xml.flat",
+        "source": "/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/res/layout/activity_h_http.xml"
+    },
+    {
         "merged": "/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },
@@ -42,6 +50,10 @@
     {
         "merged": "/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/build/intermediates/res/merged/debug/layout_activity_b_list_view.xml.flat",
         "source": "/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/res/layout/activity_b_list_view.xml"
+    },
+    {
+        "merged": "/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/build/intermediates/res/merged/debug/layout_recycler_view_vista.xml.flat",
+        "source": "/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/res/layout/recycler_view_vista.xml"
     },
     {
         "merged": "/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
@@ -62,6 +74,10 @@
     {
         "merged": "/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
         "source": "/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/build/intermediates/res/merged/debug/layout_activity_g_recycler_view.xml.flat",
+        "source": "/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/src/main/res/layout/activity_g_recycler_view.xml"
     },
     {
         "merged": "/home/dev-11/Documents/Github/2020B/AMC-eguez-sarzosa-vicente-adrian/02-android/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
