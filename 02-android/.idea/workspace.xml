@@ -12,53 +12,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b94ef203-ed21-4d34-a8e9-36187ff5afb6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../03 - firebase - 01/app/google-services.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03 - firebase - 01/app/src/main/java/com/example/firebaseejemplo/BAuthUsuario.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03 - firebase - 01/app/src/main/java/com/example/firebaseejemplo/BFirestore.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03 - firebase - 01/app/src/main/java/com/example/firebaseejemplo/BUsuarioFirebase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03 - firebase - 01/app/src/main/res/drawable/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03 - firebase - 01/app/src/main/res/layout/activity_b_firestore.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/app/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/app/src/androidTest/java/com/example/firebaseejemploconassistente/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/app/src/main/java/com/example/firebaseejemploconassistente/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/app/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/app/src/test/java/com/example/firebaseejemploconassistente/ExampleUnitTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-firebase-02/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03 - firebase - 01/app/src/main/java/com/example/firebaseejemplo/COrdenes.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03 - firebase - 01/app/src/main/java/com/example/firebaseejemplo/CProducto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03 - firebase - 01/app/src/main/java/com/example/firebaseejemplo/CRestaurante.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03 - firebase - 01/app/src/main/res/layout/activity_c_ordenes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03 - firebase - 01/app/src/main/res/layout/activity_c_producto.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03 - firebase - 01/app/src/main/res/layout/activity_c_restaurante.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03 - firebase - 01/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03 - firebase - 01/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03 - firebase - 01/app/src/main/java/com/example/firebaseejemplo/BFirestore.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../03 - firebase - 01/app/src/main/java/com/example/firebaseejemplo/BFirestore.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03 - firebase - 01/app/src/main/res/layout/activity_b_firestore.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03 - firebase - 01/app/src/main/res/layout/activity_b_firestore.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
