@@ -37,7 +37,7 @@ class CProducto : AppCompatActivity() {
                 .document()
                 .set(nuevoProducto)
         referencia
-                .addOnSuccessListener {}
-                .addOnFailureListener {}
+                    .addOnSuccessListener {}
+                    .addOnFailureListener {}
     }
 }
